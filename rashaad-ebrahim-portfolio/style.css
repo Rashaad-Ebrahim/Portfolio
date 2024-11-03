@@ -3,6 +3,7 @@
   --paper: hsla(251, 28%, 88%, 0.99);
   --ink: hsla(244, 16%, 17%, 0.95);
   --brand: hsla(0, 79%, 63%, 0.9);
+  --brandTint: hsla(0, 79%, 82%, 0.8);
   --font: "Raleway", system-ui, sans-serif;
   --gap: 20px;
   --container: clamp(280px, calc(100vw - calc(var(--gap) * 2)), 1180px);
@@ -47,7 +48,9 @@ body > header {
 nav ul {
   display: flex;
   list-style: none;
-  gap: var(--gap);
+  /* gap: var(--gap); */
+  gap: 50px;
+  padding-right: 20px;
 }
 
 /* Text readability */
