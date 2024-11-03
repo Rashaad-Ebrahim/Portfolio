@@ -63,3 +63,25 @@ section p {
   line-height: 1.5;
   max-width: 65ch;
 }
+
+.link-icon, .gh-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--gap);
+}
+
+.link-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.project-card {
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.1);
+}
