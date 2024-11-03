@@ -5,10 +5,14 @@
   --brand: hsla(0, 79%, 63%, 0.9);
   --brandTint: hsla(0, 79%, 82%, 0.8);
   --font: "Raleway", system-ui, sans-serif;
-  --gap: 20px;
+  --gap: 40px;
   --container: clamp(280px, calc(100vw - calc(var(--gap) * 2)), 1180px);
 }
 /* General Styles */
+html {
+  scroll-padding: var(--scroll-padding, 80.475px);
+}
+
 html,
 body {
   scroll-behavior: smooth;
@@ -25,6 +29,7 @@ body {
 }
 a,
 a:any-link {
+  font-weight: 600;
   color: currentColor;
   text-decoration: none;
   border-bottom: 2px solid transparent;
@@ -48,13 +53,13 @@ body > header {
 nav ul {
   display: flex;
   list-style: none;
-  /* gap: var(--gap); */
-  gap: 50px;
+  gap: var(--gap);
+  /* gap: 50px; */
   padding-right: 20px;
 }
 
 /* Text readability */
 section p {
   line-height: 1.5;
-  max-width: 55ch;
+  max-width: 65ch;
 }
