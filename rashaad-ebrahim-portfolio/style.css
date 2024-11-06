@@ -10,7 +10,10 @@
 }
 /* General Styles */
 html {
+  margin: 0;
+  padding: 0;
   scroll-padding: var(--scroll-padding, 80.475px);
+
 }
 
 html,
@@ -20,13 +23,22 @@ body {
   color: var(--ink);
   font-family: var(--font);
 }
-body {
+
+/* .grid {
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--gap);
+  margin: auto;
+} */
+
+body {
+  /* display: grid; */
   margin: auto;
   min-height: 100vh;
   gap: var(--gap);
-  max-width: var(--container);
+  /* max-width: var(--container); */
 }
+
 a,
 a:any-link {
   font-weight: 600;
@@ -41,8 +53,9 @@ a:focus {
   border-color: currentColor;
 }
 /* Site header and navigation */
-body > header {
-  background: var(--paper);
+.header {
+  padding: 0 60px;
+  background: hsla(251, 28%, 88%, 0.9);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -69,19 +82,90 @@ section p {
   height: 24px;
 }
 
+/* HERO */
+
+.section-hero {
+  background-color: #fff;
+}
+
+.hero-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--gap);
+}
+
+.hero-img {
+  width: 100%;
+
+}
+
+.hero-text {
+align-self: center;
+margin-left: -55%;
+}
+
+.section-hero h2 {
+  font-size: 62px;
+  margin: 0;
+}
+
+.section-hero p {
+  font-size: 24px;
+  /* margin: 0; */
+  /* font-weight: 500; */
+}
+
+
+.link-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+
+.project-card {
+  padding: 32px;
+  border-radius: 8px;
+  
+  box-shadow: 0 0 20px hsla(0, 0%, 0%, 0.15);
+}
+
+.hidden {
+  display: none;
+  /* opacity: 0; */
+}
+
+.projects {
+  /* margin: 0 auto; */
+  /* width: 70%; */
+}
+
 .project-container {
+  /* width: 70%; */
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--gap);
 }
 
-.link-container {
+.project-btns {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
-.project-card {
-  padding: 16px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.1);
+.projects-btn {
+  padding: 10px;
+  width: 150px;
+  border-radius: 100px;
+  
+
+  transform: translateY(150%);
+  background-color: var(--brandTint);
+  border: none;
+  background-color: #97a3b0;
 }
+
+.projects-btn--active {
+  background-color: #6c757e;
+  /* transform: translateY(170%); */
+  /* box-shadow: 0 0 20px rgba(2, 17, 39, 0.651); */
+  }
