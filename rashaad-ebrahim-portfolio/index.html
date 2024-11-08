@@ -62,7 +62,7 @@
           <h2>About Me</h2>
         </header>
         <div class="about-container">
-          <div>
+          <div class="about-get-to-know">
             <h3>Get to know me</h3>
             <p class="about-text">
               I'm a web developer fueled by curiosity and the thrill of bringing
@@ -104,15 +104,15 @@
         </header>
         <div class="projects-container">
           <div class="projects--btn-container">
-            <button class="projects-btn projects-btn-1">My Hometown</button>
-            <button class="projects-btn projects-btn -2">Form Controls</button>
-            <button class="projects-btn projects-btn-3">
+            <button class="projects-btn projects-btn-1 projects-btn--active" data-btn="1">My Hometown</button>
+            <button class="projects-btn projects-btn-2" data-btn="2">Form Controls</button>
+            <button class="projects-btn projects-btn-3" data-btn="3">
               Bose Landing Page
             </button>
           </div>
 
           <div class="project--content-container">
-            <div class="project-card project-card-1 project-card--active">
+            <div class="project-card project-card-1 project-card--active project-card--active2">
               <div class="project-summary">
                 <img
                   class="project-img"
@@ -122,23 +122,26 @@
                 <div class="project-information">
                   <p>
                     A webpage detailing some information about my hometown,
-                    Johannesburg
+                    Johannesburg. The page features an imae carousel implemented
+                    with JavaScript.
                   </p>
-                  <div class="projects-technologies">
-                    <h3>Technologies</h3>
-                    <ul class="skills projects-skills">
-                      <li>HTML</li>
-                      <li>CSS</li>
-                      <li>JavaScript</li>
-                      <li>Git</li>
-                      <li>GitHub</li>
-                    </ul>
-                  </div>
+                  <ul class="skills projects-skills">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Git</li>
+                    <li>GitHub</li>
+                  </ul>
                 </div>
               </div>
               <ul class="project-links">
                 <li>
-                  <a class="project-link project-link--view" href="#">
+                  <a
+                    class="project-link project-link--view"
+                    href="https://rashaad-myhometown.netlify.app/"
+                    target="_blank"
+                  >
+                    <h3>View</h3>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="currentColor"
@@ -152,11 +155,15 @@
                         d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"
                       />
                     </svg>
-                    <h3>View</h3>
                   </a>
                 </li>
                 <li>
-                  <a class="project-link" href="">
+                  <a
+                    class="project-link"
+                    href="https://github.com/Rashaad-Ebrahim/my-hometown"
+                    target="_blank"
+                  >
+                    <h3>Code</h3>
                     <svg
                       focusable="false"
                       role="presentation"
@@ -171,7 +178,6 @@
                         fill="currentColor"
                       />
                     </svg>
-                    <h3>Source</h3>
                   </a>
                 </li>
               </ul>
@@ -185,23 +191,26 @@
                 />
                 <div class="project-information">
                   <p>
-                    An e-commerce form, with form validation, for custom t-shirts.
+                    An desktop-first e-commerce form for custom t-shirt orders.
+                    Includes form validation, and JavaScript elements.
                   </p>
-                  <div class="projects-technologies">
-                    <h3>Technologies</h3>
-                    <ul class="skills projects-skills">
-                      <li>HTML</li>
-                      <li>CSS</li>
-                      <li>JavaScript</li>
-                      <li>Git</li>
-                      <li>GitHub</li>
-                    </ul>
-                  </div>
+                  <ul class="skills projects-skills">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Responsive Design</li>
+                    <li>JavaScript</li>
+                    <li>Git</li>
+                  </ul>
                 </div>
               </div>
               <ul class="project-links">
                 <li>
-                  <a class="project-link project-link--view" href="https://rashaad-formcontrols.netlify.app/" target="_blank">
+                  <a
+                    class="project-link project-link--view"
+                    href="https://rashaad-formcontrols.netlify.app/"
+                    target="_blank"
+                  >
+                    <h3>View</h3>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="currentColor"
@@ -215,11 +224,15 @@
                         d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"
                       />
                     </svg>
-                    <h3>View</h3>
                   </a>
                 </li>
                 <li>
-                  <a class="project-link" href="https://github.com/Rashaad-Ebrahim/Module-User-Focused-Data/tree/feature/Form-Controls/Form-Controls" target="_blank">
+                  <a
+                    class="project-link"
+                    href="https://github.com/Rashaad-Ebrahim/Module-User-Focused-Data/tree/feature/Form-Controls/Form-Controls"
+                    target="_blank"
+                  >
+                    <h3>Code</h3>
                     <svg
                       focusable="false"
                       role="presentation"
@@ -234,7 +247,6 @@
                         fill="currentColor"
                       />
                     </svg>
-                    <h3>Source</h3>
                   </a>
                 </li>
               </ul>
@@ -243,29 +255,31 @@
               <div class="project-summary">
                 <img
                   class="project-img"
-                  src="img/hometown.jpg"
-                  alt="Snippet of My Hometown website"
+                  src="img/bose.jpg"
+                  alt="Snippet of Bose landing website"
                 />
                 <div class="project-information">
                   <p>
-                    A webpage detailing some information about my hometown,
-                    Johannesburg
+                    Bose landing page showcasing responsive design and SASS.
                   </p>
-                  <div class="projects-technologies">
-                    <h3>Technologies</h3>
-                    <ul class="skills projects-skills">
-                      <li>HTML</li>
-                      <li>CSS</li>
-                      <li>JavaScript</li>
-                      <li>Git</li>
-                      <li>GitHub</li>
-                    </ul>
-                  </div>
+                  <ul class="skills projects-skills">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>SASS</li>
+                    <li>Responsive Design</li>
+                    <li>JavaScript</li>
+                    <li>Git</li>
+                  </ul>
                 </div>
               </div>
               <ul class="project-links">
                 <li>
-                  <a class="project-link project-link--view" href="#">
+                  <a
+                    class="project-link project-link--view"
+                    href="https://rashaad-boselanding.netlify.app/"
+                    target="_blank"
+                  >
+                    <h3>View</h3>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="currentColor"
@@ -279,11 +293,15 @@
                         d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"
                       />
                     </svg>
-                    <h3>View</h3>
                   </a>
                 </li>
                 <li>
-                  <a class="project-link" href="">
+                  <a
+                    class="project-link"
+                    href="https://github.com/Rashaad-Ebrahim/Bose_landing_page"
+                    target="_blank"
+                  >
+                    <h3>Code</h3>
                     <svg
                       focusable="false"
                       role="presentation"
@@ -298,7 +316,6 @@
                         fill="currentColor"
                       />
                     </svg>
-                    <h3>Source</h3>
                   </a>
                 </li>
               </ul>
@@ -383,11 +400,14 @@
               fill="currentColor"
             />
           </svg>
-          <a class="read-me-link" href="https://github.com/CodeYourFuture/Portfolio"
+          <a
+            class="read-me-link"
+            href="https://github.com/CodeYourFuture/Portfolio"
             ><p class="read-me-text">Read me</p></a
           >
         </div>
       </div>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
