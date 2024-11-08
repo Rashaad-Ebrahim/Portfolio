@@ -38,16 +38,18 @@
   </head>
   <body>
     <header class="header">
-      <h1 class="header-title">Rashaad Ebrahim</h1>
-      <nav class="nav">
+      <h1 class="header__title">Rashaad Ebrahim</h1>
+      <nav class="header__nav">
         <ul>
-          <li><a class="nav-link" href="#about">About Me</a></li>
-          <li><a class="nav-link" href="#projects">Projects</a></li>
-          <li><a class="nav-link" href="#contact">Contact</a></li>
+          <li><a class="nav__link hover-effect" href="#about">About Me</a></li>
+          <li>
+            <a class="nav__link hover-effect" href="#projects">Projects</a>
+          </li>
+          <li><a class="nav__link hover-effect" href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <main tabindex="0">
+    <main tabindex="0" class="hidden">
       <section class="section section-hero" id="hero">
         <div class="hero-container">
           <img src="img/hero.jpg" alt="" class="hero-img" />
@@ -104,15 +106,24 @@
         </header>
         <div class="projects-container">
           <div class="projects--btn-container">
-            <button class="projects-btn projects-btn-1 projects-btn--active" data-btn="1">My Hometown</button>
-            <button class="projects-btn projects-btn-2" data-btn="2">Form Controls</button>
+            <button
+              class="projects-btn projects-btn-1 projects-btn--active"
+              data-btn="1"
+            >
+              My Hometown
+            </button>
+            <button class="projects-btn projects-btn-2" data-btn="2">
+              Form Controls
+            </button>
             <button class="projects-btn projects-btn-3" data-btn="3">
               Bose Landing Page
             </button>
           </div>
 
           <div class="project--content-container">
-            <div class="project-card project-card-1 project-card--active project-card--active2">
+            <div
+              class="project-card project-card-1 project-card--active project-card--active2"
+            >
               <div class="project-summary">
                 <img
                   class="project-img"
@@ -382,7 +393,7 @@
         </ul>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer hidden">
       <div class="footer-container">
         <h3>&copy 2024 - Rashaad Ebrahim - All Rights Reserved</h3>
         <div class="read-me">
