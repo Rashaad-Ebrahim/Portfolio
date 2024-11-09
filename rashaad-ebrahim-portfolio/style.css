@@ -46,6 +46,10 @@ body {
   flex-wrap: wrap;
 }
 
+.header__title {
+  font-size: 4rem;
+}
+
 .header__nav ul {
   display: flex;
   list-style: none;
@@ -66,19 +70,18 @@ body {
 
 /* HERO */
 .section-hero {
-  margin-top: 60px;
-  min-height: 100vh;
+  padding: 4.4rem 0;
+  min-height: 80vh;
 }
 
 .section-hero__content {
   max-width: var(--container);
   margin: 0 auto;
-  padding: 6.8rem;
+  padding: 6rem;
   display: flex;
   flex-direction: column;
   height: 100%;
 }
-
 
 .section-hero__text {
   align-self: center;
@@ -89,25 +92,25 @@ body {
 .section-hero__text::before,
 .section-hero__text::after {
   content: "";
-  height: 100px;
-  width: 200px;
+  height: 120px;
+  width: 120px;
   position: absolute;
 }
 
 .section-hero__text::before {
-  left: 0;
-  bottom: 0;
-  transform: translate(-50%,50%);
-  border-bottom: 30px solid var(--brand);
-  border-left: 30px solid var(--brand);
+  right: 0;
+  top: 0;
+  border-top: 32px solid var(--brand);
+  border-right: 32px solid var(--brand);
+  transform: translate(50%, -50%);
 }
 
 .section-hero__text::after {
-  right: 0;
-  top: 0;
-  transform: translate(50%,-50%);
-  border-top: 30px solid var(--brand);
-  border-right: 30px solid var(--brand);
+  left: 0;
+  bottom: 0;
+  border-bottom: 32px solid var(--brand);
+  border-left: 32px solid var(--brand);
+  transform: translate(-50%, 50%);
 }
 
 .section-hero__title {
@@ -120,7 +123,7 @@ body {
 }
 
 .section-hero__quote {
-  margin-top:4rem;
+  margin-top: 4rem;
   display: flex;
   align-self: flex-end;
 }
@@ -142,34 +145,48 @@ body {
 }
 
 .section-hero__contacts {
-  margin-top: 120px;
-  margin-left: -68px;
+  margin-top: 9.6rem;
+  margin-left: -6.8rem;
 }
 
 /* ABOUT */
 
 .section-about {
+  padding: 5.2rem 0;
+
+  background-color: var(--paper);
+  background-color: rgba(128, 151, 162, 0.3);
+}
+
+.section-about__content {
+  margin: 0 auto;
   max-width: var(--container);
-  margin: 0 auto 120px;
-  position: relative;
 }
 
-.about-get-to-know {
-  padding-left: 60px;
+.section-about__title {
+  font-size: 6rem;
+  margin-bottom: 4.4rem;
 }
 
-.about-text {
-  padding: 0 var(--gap);
-}
-
-.about-container {
+.section-about__summary {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  /* gap: var(--gap); */
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap);
+  padding: 0 1.6rem;
 }
 
-.about-container h3 {
-  font-size: 24px;
+.section-about__summary h3 {
+  text-align: center;
+  padding: 1.8rem 0;
+}
+
+.section-about__text {
+  padding: 0 2.4rem;
+}
+
+.section-about__heading {
+  font-size: 3.2rem;
+  margin-bottom: 1.6rem;
 }
 
 /* Projects */
