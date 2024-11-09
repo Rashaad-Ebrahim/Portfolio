@@ -1,22 +1,27 @@
 /* ##### GENERAL ##### */
 /* Design tokens */
 :root {
-  --paper: #cad2d3; /* Primary*/
+  /* --paper: #cad2d3; Primary */
+  --paper: #8097a2;
   --paperShade: #95a5a6;
   --paperTint: #95a5a6;
 
-  --ink: #313131; /* Secondary */
+  --ink: #262626; /* Secondary */
   --inkShade: #222;
   --inkTint: #909090;
 
-  --brand: #e74c3c; /* Accent */
+  --brand: #e74c3c;
+  /* --brand: #FF5722;
+  --brand: #FF5722;
+  --brand: #FF5722; */
 
-  --brandTint: #f5b7b1;
+  --brandTint: #f3a69e;
+
   --accent: #bebdc2;
   --secondary: #9b8199;
   --font: "Raleway", system-ui, sans-serif;
   --gap: 40px;
-  --icon-size: 32px;
+  --icon-size: 28px;
   --container: clamp(280px, calc(100vw - calc(var(--gap) * 2)), 1180px);
 }
 
@@ -41,8 +46,13 @@ body {
   color: var(--ink);
 }
 
+main {
+  max-width: var(--container);
+  margin: 0 auto;
+}
+
 h1 {
-  font-size: 3.6rem;
+  font-size: 4rem;
   line-height: 1.2;
 }
 
@@ -84,11 +94,6 @@ strong {
 }
 
 /* Changes color of element hover is applied to */
-.hover-effect:hover,
-.hover-effect:focus,
-.hover-effect:active {
-  color: var(--brand);
-}
 
 /* Setup effect elements */
 .hover-effect::before,
@@ -123,4 +128,69 @@ strong {
 .hover-effect:hover::after {
   opacity: 1;
   transform: translate(0, 0);
+}
+
+/* Section header decoration */
+
+.section-header h2 {
+  padding: 2rem 4rem;
+}
+
+.section-header {
+  /* padding-left: 60px; */
+  display: inline-block;
+  position: relative;
+}
+
+.section-header::before,
+.section-header::after {
+  content: "";
+  height: 20px;
+  width: 80px;
+  position: absolute;
+}
+
+.section-header::before {
+  left: 0;
+  bottom: 0;
+  /* transform: translate(-50%,50%); */
+  border-bottom: 6px solid var(--brand);
+  border-left: 6px solid var(--brand);
+}
+
+.section-header::after {
+  right: 0;
+  top: 0;
+  /* transform: translate(-50%,50%); */
+  border-top: 6px solid var(--brand);
+  border-right: 6px solid var(--brand);
+  /* background-color: #222; */
+}
+
+/* Reuseable blocks*/
+.skills {
+  padding: 0;
+  columns: #f31a1a;
+}
+
+.skills li {
+  font-weight: 500;
+  margin: 5px;
+  padding: 10px 15px;
+  font-weight: 500;
+  border-radius: 8px;
+  color: var(--inkShade);
+  background-color: #9b8199;
+  display: inline-block;
+  transition: all 0.3s;
+}
+
+.skills li:hover {
+  /* transform: translateY(-10%); */
+  box-shadow: 0 0 10px hsla(244, 16%, 17%, 0.5);
+}
+
+.icon {
+  width: var(--icon-size);
+  height: var(--icon-size);
 }
