@@ -37,9 +37,9 @@
     />
   </head>
   <body>
-    <header class="header ">
+    <header class="header">
       <div class="header__content">
-        <h2 class="header__title">Rashaad Ebrahim</h2>
+        <h1 class="header__title">Rashaad Ebrahim</h1>
         <nav class="header__nav">
           <ul>
             <li>
@@ -158,18 +158,17 @@
             <div class="section-about__get-to-know">
               <h3 class="section-about__heading">Get to know me</h3>
               <p class="section-about__text">
-                I'm am fueled by curiosity and the thrill of
-                bringing visions to life on the web.
+                I'm am fueled by curiosity and the thrill of bringing visions to
+                life on the web.
                 <br /><br />
-                I aim to create sites and applications that look great, feel amazing and
-                perform phenomincally.
+                I aim to create sites and applications that look great, feel
+                amazing and perform phenomincally.
                 <br /><br />
-                I'm excited about future opportunities to
-                grow and create impactful work!
-                <br><br>
-                For me, coding isn't just
-                about problem-solving - it's about crafting experiences people
-                will remember.
+                I'm excited about future opportunities to grow and create
+                impactful work!
+                <br /><br />
+                For me, coding isn't just about problem-solving - it's about
+                crafting experiences people will remember.
               </p>
             </div>
             <div class="section-about__skills">
@@ -190,238 +189,256 @@
           </div>
         </div>
       </section>
-      <section class="section section-projects" id="projects">
-        <header class="section-header">
-          <h2 class="section__header" >Projects</h2>
-        </header>
-        <div class="projects-container">
-          <div class="projects--btn-container">
-            <button
-              class="projects-btn projects-btn-1 projects-btn--active"
-              data-btn="1"
-            >
-              My Hometown
-            </button>
-            <button class="projects-btn projects-btn-2" data-btn="2">
-              Form Controls
-            </button>
-            <button class="projects-btn projects-btn-3" data-btn="3">
-              Bose Landing Page
-            </button>
+
+      <section class="section projects" id="projects">
+        <div class="projects__content">
+
+          <header class="section-header">
+            <h2 class="section__header project__title">Projects</h2>
+          </header>
+
+          <div class="projects-tabs">
+
+            <div class="projects-tabs__btns-container">
+
+              <button
+                class="projects-tabs__btn projects-tabs__btn-1 projects-tabs__btn--active"
+                data-btn="1"
+              >
+                My Hometown
+              </button>
+
+              <button class="projects-tabs__btn projects-tabs__btn-2" data-btn="2">
+                Form Controls
+              </button>
+
+              <button class="projects-tabs__btn projects-tabs__btn-3" data-btn="3">
+                Bose Landing Page
+              </button>
+
+            </div>
+  
+            <div class="project-tabs__contents-container">
+
+              <div
+                class="project-card project-card-1 project-card--active project-card--active2"
+              >
+                <div class="project-card__summary">
+                  <img
+                    class="project-card__img"
+                    src="img/hometown.jpg"
+                    alt="Snippet of My Hometown website"
+                  />
+                  <div class="project-card__information">
+                    <p>
+                      A webpage detailing some information about my hometown,
+                      Johannesburg. The page features an image carousel implemented
+                      with JavaScript.
+                    </p>
+                    <div class="skills">
+                      <ul class="skills__lists">
+                        <li class="skills__item">HTML</li>
+                        <li class="skills__item">CSS</li>
+                        <li class="skills__item">JavaScript</li>
+                        <li class="skills__item">Git</li>
+                        <li class="skills__item">Github</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <ul class="project-card__links">
+                  <li>
+                    <a
+                      class="project-card__link project-card__link--view"
+                      href="https://rashaad-myhometown.netlify.app/"
+                      target="_blank"
+                    >
+                      View
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        class="icon"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z"
+                        />
+                        <path
+                          d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="project-card__link"
+                      href="https://github.com/Rashaad-Ebrahim/my-hometown"
+                      target="_blank"
+                    >
+                      Code
+                      <svg
+                        focusable="false"
+                        role="presentation"
+                        viewbox="0 0 98 96"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="project-card project-card-2">
+                <div class="project-card__summary">
+                  <img
+                    class="project-card__img"
+                    src="img/form-controls.jpg"
+                    alt="Snippet of a e-commerce form"
+                  />
+                  <div class="project-card__information">
+                    <p>
+                      An desktop-first e-commerce form for custom t-shirt orders.
+                      Includes form validation, and JavaScript elements.
+                    </p>
+                    <div class="skills">
+                      <ul class="skills__lists">
+                        <li class="skills__item">HTML</li>
+                        <li class="skills__item">CSS</li>
+                        <li class="skills__item">JavaScript</li>
+                        <li class="skills__item">Git</li>
+                        <li class="skills__item">Responsive Design</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <ul class="project-card__links">
+                  <li>
+                    <a
+                      class="project-card__link project-card__link--view"
+                      href="https://rashaad-formcontrols.netlify.app/"
+                      target="_blank"
+                    >
+                      View
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        class="icon"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z"
+                        />
+                        <path
+                          d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="project-card__link"
+                      href="https://github.com/Rashaad-Ebrahim/Module-User-Focused-Data/tree/feature/Form-Controls/Form-Controls"
+                      target="_blank"
+                    >
+                      Code
+                      <svg
+                        focusable="false"
+                        role="presentation"
+                        viewbox="0 0 98 96"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="project-card project-card-3">
+                <div class="project-card__summary">
+                  <img
+                    class="project-card__img"
+                    src="img/bose.jpg"
+                    alt="Snippet of Bose landing website"
+                  />
+                  <div class="project-card__information">
+                    <p>
+                      Bose landing page showcasing responsive design and SASS.
+                    </p>
+                    <div class="skills">
+                      <ul class="skills__lists">
+                        <li class="skills__item">HTML</li>
+                        <li class="skills__item">CSS</li>
+                        <li class="skills__item">SASS</li>
+                        <li class="skills__item">JavaScript</li>
+                        <li class="skills__item">Git</li>
+                        <li class="skills__item">Responsive Design</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <ul class="project-card__links">
+                  <li>
+                    <a
+                      class="project-card__link project-card__link--view"
+                      href="https://rashaad-boselanding.netlify.app/"
+                      target="_blank"
+                    >
+                      View
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        class="icon"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z"
+                        />
+                        <path
+                          d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="project-card__link"
+                      href="https://github.com/Rashaad-Ebrahim/Bose_landing_page"
+                      target="_blank"
+                    >
+                      Code
+                      <svg
+                        focusable="false"
+                        role="presentation"
+                        viewbox="0 0 98 96"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
 
-          <div class="project--content-container">
-            <div
-              class="project-card project-card-1 project-card--active project-card--active2"
-            >
-              <div class="project-summary">
-                <img
-                  class="project-img"
-                  src="img/hometown.jpg"
-                  alt="Snippet of My Hometown website"
-                />
-                <div class="project-information">
-                  <p>
-                    A webpage detailing some information about my hometown,
-                    Johannesburg. The page features an imae carousel implemented
-                    with JavaScript.
-                  </p>
-                  <ul class="skills projects-skills">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Git</li>
-                    <li>GitHub</li>
-                  </ul>
-                </div>
-              </div>
-              <ul class="project-links">
-                <li>
-                  <a
-                    class="project-link project-link--view"
-                    href="https://rashaad-myhometown.netlify.app/"
-                    target="_blank"
-                  >
-                    <h3>View</h3>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="currentColor"
-                      class="icon"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z"
-                      />
-                      <path
-                        d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"
-                      />
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="project-link"
-                    href="https://github.com/Rashaad-Ebrahim/my-hometown"
-                    target="_blank"
-                  >
-                    <h3>Code</h3>
-                    <svg
-                      focusable="false"
-                      role="presentation"
-                      viewbox="0 0 98 96"
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="icon"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
-                        fill="currentColor"
-                      />
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="project-card project-card-2">
-              <div class="project-summary">
-                <img
-                  class="project-img"
-                  src="img/form-controls.jpg"
-                  alt="Snippet of a e-commerce form"
-                />
-                <div class="project-information">
-                  <p>
-                    An desktop-first e-commerce form for custom t-shirt orders.
-                    Includes form validation, and JavaScript elements.
-                  </p>
-                  <ul class="skills projects-skills">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Responsive Design</li>
-                    <li>JavaScript</li>
-                    <li>Git</li>
-                  </ul>
-                </div>
-              </div>
-              <ul class="project-links">
-                <li>
-                  <a
-                    class="project-link project-link--view"
-                    href="https://rashaad-formcontrols.netlify.app/"
-                    target="_blank"
-                  >
-                    <h3>View</h3>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="currentColor"
-                      class="icon"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z"
-                      />
-                      <path
-                        d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"
-                      />
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="project-link"
-                    href="https://github.com/Rashaad-Ebrahim/Module-User-Focused-Data/tree/feature/Form-Controls/Form-Controls"
-                    target="_blank"
-                  >
-                    <h3>Code</h3>
-                    <svg
-                      focusable="false"
-                      role="presentation"
-                      viewbox="0 0 98 96"
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="icon"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
-                        fill="currentColor"
-                      />
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="project-card project-card-3">
-              <div class="project-summary">
-                <img
-                  class="project-img"
-                  src="img/bose.jpg"
-                  alt="Snippet of Bose landing website"
-                />
-                <div class="project-information">
-                  <p>
-                    Bose landing page showcasing responsive design and SASS.
-                  </p>
-                  <ul class="skills projects-skills">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>SASS</li>
-                    <li>Responsive Design</li>
-                    <li>JavaScript</li>
-                    <li>Git</li>
-                  </ul>
-                </div>
-              </div>
-              <ul class="project-links">
-                <li>
-                  <a
-                    class="project-link project-link--view"
-                    href="https://rashaad-boselanding.netlify.app/"
-                    target="_blank"
-                  >
-                    <h3>View</h3>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="currentColor"
-                      class="icon"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z"
-                      />
-                      <path
-                        d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"
-                      />
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="project-link"
-                    href="https://github.com/Rashaad-Ebrahim/Bose_landing_page"
-                    target="_blank"
-                  >
-                    <h3>Code</h3>
-                    <svg
-                      focusable="false"
-                      role="presentation"
-                      viewbox="0 0 98 96"
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="icon"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
-                        fill="currentColor"
-                      />
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
         </div>
       </section>
       <section class="section section-contact" id="contact">
@@ -486,9 +503,9 @@
         </div>
       </section>
     </main>
-    <footer class="footer hidden">
+    <footer class="footer">
       <div class="footer-container">
-        <h3>&copy 2024 - Rashaad Ebrahim - All Rights Reserved</h3>
+        <h4>&copy 2024 - Rashaad Ebrahim - All Rights Reserved</h4>
         <div class="read-me">
           <svg
             focusable="false"
